@@ -1,5 +1,6 @@
 import {  useState } from "react";
-
+// eslint-disable-next-line react-hooks/rules-of-hooks
+import Bloglist from "./Bloglist.js";
 
 const home = () => {
 // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -26,19 +27,7 @@ const home = () => {
 
     return (  
         <div  className="home">
-            {/* <p>{name} is {age} years old</p>
-            <button onClick={handleClick}> Click Me </button>
-            <br/>
-            <button onClick={(e)=>{
-                handleClick1('Fathima', e)
-            }}> Click Me Again </button> */}
-
-            {blogs.map((blog) => (
-                <div className="blog-preview" key ={blog.id}>
-                    <h2>{blog.title}</h2>
-                    <p>Written by  { blog.author} </p>
-                    </div>
-            ))}
+            <Bloglist blogs = {blogs}/>
         </div>
     );
 }
