@@ -22,12 +22,13 @@ const home = () => {
     const [blogs, setBlogs] = useState([
         {title : 'Finding the destiny', body :'This is new journey...', author : 'Rifaza', id :1},
         {title : 'Success Life', body :'One a upon time in summe...', author : 'Anas', id :2},
-        {title : 'Fuilure to success', body :'There are many factors...', author : 'Saleema', id :3},
+        {title : 'Fuilure to success', body :'There are many factors...', author : 'Rifaza', id :3},
     ])
 
     return (  
         <div  className="home">
-            <Bloglist blogs = {blogs}/>
+            <Bloglist blogs = {blogs} title="All Blogs"/>
+            <Bloglist blogs = {blogs.filter((blog)=> blog.author=== 'Rifaza')} title="Rifaza's Blogs"/>
         </div>
     );
 }
