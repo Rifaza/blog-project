@@ -5,7 +5,6 @@ import Bloglist from "./Bloglist.js";
 const Home = () => {
 
     const [name, setName] = useState('Rifaza');
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [age, setAge] = useState(25);
 
     const handleClick = (e) => {
@@ -33,11 +32,13 @@ const Home = () => {
 
     useEffect(()=>{
         console.log("Use effect will run when every render")
-    });
+    },[name]);
     return (  
         <div  className="home">
             <Bloglist blogs = {blogs} title="All Blogs" handleDelete={handleDelete}/>
             <Bloglist blogs = {blogs.filter((blog)=> blog.author=== 'Rifaza')}  title="Rifaza's Blogs"/>
+            <button onClick={handleClick}> Change Name</button>
+            <p>{name}</p>
         </div>
     );
 }
