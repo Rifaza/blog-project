@@ -1,0 +1,16 @@
+{
+    "blogs":[
+        {
+            "title":"Finding the destine",
+            "body":"in 1988, in USA in the morning ..",
+            "author":"Robin Sharma",
+            "id":1
+        },
+        {
+            "title":"Automic habit",
+            "body":"in 1988, in USA in the morning ..",
+            "author":"Rifaza",
+            "id":2
+        }
+    ]
+}
