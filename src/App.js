@@ -1,6 +1,6 @@
 
 import Navbar from './navbar';
-import Home from './home'
+import Home from './Home';
 
 
 function App() {

@@ -1,9 +1,9 @@
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 // eslint-disable-next-line react-hooks/rules-of-hooks
 import Bloglist from "./Bloglist.js";
 
-const home = () => {
-// eslint-disable-next-line react-hooks/rules-of-hooks
+const Home = () => {
+
     const [name, setName] = useState('Rifaza');
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [age, setAge] = useState(25);
@@ -30,6 +30,10 @@ const home = () => {
         setBlogs(newBlogs);
 
     }
+
+    useEffect(()=>{
+        console.log("Use effect will run when every render")
+    });
     return (  
         <div  className="home">
             <Bloglist blogs = {blogs} title="All Blogs" handleDelete={handleDelete}/>
@@ -38,4 +42,4 @@ const home = () => {
     );
 }
  
-export default home;
+export default Home;
