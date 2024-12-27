@@ -1,16 +1,28 @@
 {
-    "blogs":[
-        {
-            "title":"Finding the destine",
-            "body":"in 1988, in USA in the morning ..",
-            "author":"Robin Sharma",
-            "id":1
-        },
-        {
-            "title":"Automic habit",
-            "body":"in 1988, in USA in the morning ..",
-            "author":"Rifaza",
-            "id":2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "Automic habit",
+      "body": "in 1988, in USA in the morning ..",
+      "author": "Rifaza",
+      "id": "2"
+    },
+    {
+      "id": "07cb",
+      "title": "Be positive",
+      "body": "In this world we can do many things..",
+      "author": "Rifaza"
+    },
+    {
+      "id": "9c5c",
+      "title": "Be confident",
+      "body": "In this world",
+      "author": "Anas"
+    },
+    {
+      "id": "f428",
+      "title": "Be positive",
+      "body": "new kkk",
+      "author": "Rifaza"
+    }
+  ]
 }
